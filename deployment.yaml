@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: cloud-final-app
-          image: logjinsu/cloud-final-app:initial
+          image: logjinsu/cloud-final-app:fadf958
           ports:
             - containerPort: 3000
