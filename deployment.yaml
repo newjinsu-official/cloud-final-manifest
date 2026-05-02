@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cloud-final-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: cloud-final-app
+  template:
+    metadata:
+      labels:
+        app: cloud-final-app
+    spec:
+      containers:
+        - name: cloud-final-app
+          image: logjinsu/cloud-final-app:initial
+          ports:
+            - containerPort: 3000
